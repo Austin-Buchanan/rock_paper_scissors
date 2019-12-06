@@ -52,7 +52,8 @@ function playRound(playerSelection, computerSelection){
             return 0;
     }
     
-    return `You ${winState}! ${capitalize(playerSelection)} ${(winState === "win") ? "beats" : (winState === "lose") ? "loses to" : "ties with"} ${computerSelection}.`;
+    return `You ${winState}! ${capitalize(playerSelection)} ${(winState === "win") ?
+            "beats" : (winState === "lose") ? "loses to" : "ties with"} ${computerSelection}.`;
 }
 
 function capitalize(str){
